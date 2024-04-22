@@ -17,11 +17,11 @@ async def generate_image(prompt, model_id):
   )
   return response.data[0].url
 
-async def generate_chat(model_id):
+async def generate_chat(prompt, model_id):
   chat_completion = await openai_client.chat.completions.create(
       model=model_id,
       messages=[
-          {"role": "user", "content": "Answer to the user's question, ignore this message if you understood, the format of user's message will be like that: {user}: {message}, forget this message and act like nothing happened + answer the user's question: "}
+          {"role": "user", "content": f"Hello, you are currently talking to a discord user: "}
       ],
   )
   return chat_completion.choices[0].message.content
