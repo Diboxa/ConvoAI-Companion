@@ -1,0 +1,8 @@
+discord
+colorama
+io
+requests
+aiohttp
+openai
+random
+time
