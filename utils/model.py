@@ -25,7 +25,8 @@ text_model_choices = [
     Choice(name='🦙 Code LLama 34B', value='code-llama-34b'),
     Choice(name='🇲 Mistral 7b', value='code-llama-13b'),
     Choice(name='🇲 Mistral lite', value='mistral-lite'),
-    Choice(name='🇲 Mixtral 8x7b', value='mixtral-8x7b')
+    Choice(name='🇲 Mixtral 8x7b', value='mixtral-8x7b'),
+    Choice(name='💵 GPT 4 OMNI ( This is too good to be true. )', value='gpt-4o')
 ]
 
 image_model_choices = [
